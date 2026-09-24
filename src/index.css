@@ -1750,3 +1750,25 @@ textarea {
   top: 10%;
   left: 55%;
 }
+/* Mouse-following glow */
+
+.mouse-glow {
+  position: fixed;
+  top: -150px;
+  left: -150px;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 255, 255, 0.12);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+
+  z-index: 0;
+
+  transform: translate(-50%, -50%);
+}

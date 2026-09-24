@@ -36,6 +36,22 @@ function AnimatedBackground() {
           ease: "sine.inOut",
         });
       });
+
+      // Mouse-following glow
+      const handleMouseMove = (event) => {
+        gsap.to(".mouse-glow", {
+          x: event.clientX,
+          y: event.clientY,
+          duration: 1,
+          ease: "power2.out",
+        });
+      };
+
+      window.addEventListener("mousemove", handleMouseMove);
+
+      return () => {
+        window.removeEventListener("mousemove", handleMouseMove);
+      };
     }, backgroundRef);
 
     return () => {
@@ -49,6 +65,8 @@ function AnimatedBackground() {
       className="animated-background"
       aria-hidden="true"
     >
+      <div className="mouse-glow"></div>
+
       <div className="tech-grid"></div>
 
       <div className="tech-orb orb-one"></div>
