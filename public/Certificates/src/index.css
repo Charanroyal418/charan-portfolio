@@ -1,0 +1,160 @@
+.education {
+  min-height: 80vh;
+  padding: 120px 10%;
+  background: #050505;
+}
+
+.education-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.education h2 {
+  font-size: clamp(40px, 6vw, 65px);
+  margin-bottom: 70px;
+}
+
+.timeline {
+  position: relative;
+  border-left: 1px solid #333;
+  padding-left: 40px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+
+  background: #00ffff;
+  border-radius: 50%;
+
+  left: -48px;
+  top: 5px;
+
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.timeline-content span {
+  color: #00ffff;
+  font-size: 14px;
+}
+
+.timeline-content h3 {
+  font-size: 28px;
+  margin: 12px 0;
+}
+
+.timeline-content h4 {
+  color: #aaa;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.timeline-content p {
+  color: #777;
+  line-height: 1.7;
+  max-width: 700px;
+}
+.certificates {
+  min-height: 100vh;
+  padding: 120px 10%;
+  background: #080808;
+}
+
+.certificates-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.certificates h2 {
+  font-size: clamp(40px, 6vw, 65px);
+  margin-bottom: 20px;
+}
+
+.certificates-intro {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #888;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  text-align: left;
+}
+
+.certificate-card {
+  padding: 35px;
+  background: #0c0c0c;
+  border: 1px solid #222;
+  border-radius: 16px;
+  transition: 0.4s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+  border-color: #00ffff;
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.1);
+}
+
+.certificate-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.certificate-card h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.certificate-card h4 {
+  color: #00ffff;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.certificate-card p {
+  color: #888;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.certificate-btn {
+  background: transparent;
+  border: 1px solid #333;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.certificate-btn:hover {
+  border-color: #00ffff;
+  color: #00ffff;
+}
+
+@media (max-width: 700px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+}
