@@ -7,10 +7,13 @@ import Education from "./components/Education";
 import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 function App() {
   return (
     <div>
+      <AnimatedBackground />
+
       <Navbar />
       <Hero />
       <About />
